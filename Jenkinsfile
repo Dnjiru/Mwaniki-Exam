@@ -18,7 +18,7 @@ try {
         }
         stage('Docker login to hub and push the image') {
             sh "docker login -u 'mrmwaniki' -p 'QP%nice12' "
-            sh "docker tag mwaniki3:latest mrmwaniki/mwaniki:latest"
+            sh "docker tag mwaniki3:latest mrmwaniki/mwaniki3:latest"
             sh "docker push mrmwaniki/mwaniki3:latest"
             sh "docker run -d mrmwaniki/mwaniki3:latest"
         }
